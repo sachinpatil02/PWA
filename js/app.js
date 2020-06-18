@@ -1,4 +1,4 @@
-const container = document.querySelector("..container-cards");
+const container = document.querySelector(".container-cards");
 const coffees = [
   {
     name: "Perspiciatis",
