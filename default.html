@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,10 +11,7 @@
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    !-- CSS Global -->
-    <link rel="stylesheet" href="css/theme.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
     <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
@@ -31,8 +27,73 @@
     <title>Dev'Coffee PWA</title>
   </head>
   <body>
-     
-     <section class="pt-6">
+
+<main>
+      
+      <!-- NAVBAR
+	================================================== -->
+	<nav class="navbar navbar-light navbar-expand-lg">
+		<div class="container">
+
+			<!-- Navbar: Brand -->
+			<a class="navbar-brand d-lg-none" href="index.html">Touché</a>
+
+			<!-- Navbar: Toggler -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<!-- Navbar: Collapse -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<!-- Navbar navigation: Left -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="about-us.html">About Us</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="nav-item__menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Menu
+						</a>
+						<div class="dropdown-menu" aria-labelledby="nav-item__menu">
+							<a class="dropdown-item" href="menu.html">Menu: Standard</a>
+							<a class="dropdown-item" href="menu_no-images.html">Menu: No Images</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reservation.html">Reservation</a>
+					</li>
+				</ul>
+
+				<!-- Navbar: Brand -->
+				<a class="navbar-brand d-none d-lg-flex" href="index.html">
+					Touché
+				</a>
+
+				<!-- Navbar navigation: Right -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="news-and-events.html">News &amp; Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact-us.html">Contact</a>
+					</li>
+				</ul>
+
+			</div> <!-- / .navbar-collapse -->
+
+		</div> <!-- / .container -->
+	</nav> <!-- / .navbar -->
+
+	<!-- WELCOME
+	================================================== -->
+	
+
+
+<section class="pt-6">
       <div class="container-fluid px-3 px-md-6">
         <div class="row mx-n3">
           <div class="col-12 col-sm-4 d-flex flex-column px-3">
@@ -42,7 +103,7 @@
 
               <!-- Background -->
               <div class="card-bg">
-                <div class="card-bg-img bg-cover" style="background-image: url("images/coffee1.jpg");"></div>
+                <div class="card-bg-img bg-cover" style="background-image: url(&quot;images/coffee1.jpg&quot;);"></div>
               </div>
 
               <!-- Body -->
@@ -68,7 +129,7 @@
 
               <!-- Background -->
               <div class="card-bg">
-                <div class="card-bg-img bg-cover" style="background-image: url("images/coffee2.jpg");"></div>
+                <div class="card-bg-img bg-cover" style="background-image: url(&quot;images/coffee2.jpg&quot;);"></div>
               </div>
 
               <!-- Body -->
@@ -94,7 +155,7 @@
 
               <!-- Background -->
               <div class="card-bg">
-                <div class="card-bg-img bg-cover" style="background-image: url("images/coffee3.jpg");"></div>
+                <div class="card-bg-img bg-cover" style="background-image: url(&quot;images/coffee3.jpg&quot;);"></div>
               </div>
 
               <!-- Body -->
@@ -116,96 +177,13 @@
         </div>
       </div>
     </section>
-     
-         <!-- CATEGORIES -->
-    <section class="pt-6">
-      <div class="container-fluid px-3 px-md-6">
-        <div class="row mx-n3">
-          <div class="col-12 col-sm-4 d-flex flex-column px-3">
 
-            <!-- Card-->
-            <div class="card card-xl mb-3 mb-sm-0" style="min-height: 280px">
 
-              <!-- Background -->
-              <div class="card-bg">
-                <div class="card-bg-img bg-cover" style="background-image: url("images/coffee7.jpg");"></div>
-              </div>
 
-              <!-- Body -->
-              <div class="card-body my-auto">
 
-                <!-- Heading -->
-                <h5 class="mb-0">Summer Hats</h5>
 
-                <!-- Link -->
-                <a class="btn btn-link stretched-link px-0 text-reset" href="shop.html">
-                  Shop Now <i class="fe fe-arrow-right ml-2"></i>
-                </a>
 
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-sm-4 d-flex flex-column px-3">
-
-            <!-- Card-->
-            <div class="card card-xl mb-3 mb-sm-0" style="min-height: 280px;">
-
-              <!-- Background -->
-              <div class="card-bg">
-                <div class="card-bg-img bg-cover" style="background-image: url("images/coffee8.jpg");"></div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body my-auto">
-
-                <!-- Heading -->
-                <h5 class="mb-0">Men Hats</h5>
-
-                <!-- Link -->
-                <a class="btn btn-link stretched-link px-0 text-reset" href="shop.html">
-                  Shop Now <i class="fe fe-arrow-right ml-2"></i>
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-sm-4 d-flex flex-column px-3">
-
-            <!-- Card-->
-            <div class="card card-xl bg-cover bg-hover" style="min-height: 280px;">
-
-              <!-- Background -->
-              <div class="card-bg">
-                <div class="card-bg-img bg-cover" style="background-image: url("images/coffee9.jpg");"></div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body my-auto">
-
-                <!-- Heading -->
-                <h5 class="mb-0">Floral Dresses</h5>
-
-                <!-- Link -->
-                <a class="btn btn-link stretched-link px-0 text-reset" href="shop.html">
-                  Shop Now <i class="fe fe-arrow-right ml-2"></i>
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-     
-     
-     <!-- BLOG -->
-    <section class="py-12 bg-light">
+<section class="py-12 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -228,7 +206,7 @@
 
               <!-- Image -->
               <a href="blog-post.html">
-                <img src="images/coffee9.jpg" alt="..." class="card-img-top">
+                <img src="images/coffee8.jpg" alt="..." class="card-img-top">
               </a>
 
               <!-- Body -->
@@ -288,7 +266,7 @@
 
               <!-- Image -->
               <a href="blog-post.html">
-                <img src="images/coffee8.jpg" alt="..." class="card-img-top">
+                <img src="images/coffee9.jpg" alt="..." class="card-img-top">
               </a>
 
               <!-- Body -->
@@ -325,7 +303,10 @@
       </div>
     </section>
 
-    <!-- FEATURES -->
+    </main>
+
+
+<!-- FEATURES -->
     <section class="py-9">
       <div class="container">
         <div class="row">
@@ -437,58 +418,190 @@
       </div>
     </section>
 
-     
-     
-    <main>
-      
-      
-    </main>
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-      <small class="d-block mb-3 text-muted">© 2017-2020</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Cool stuff</a></li>
-        <li><a class="text-muted" href="#">Random feature</a></li>
-        <li><a class="text-muted" href="#">Team feature</a></li>
-        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-        <li><a class="text-muted" href="#">Another one</a></li>
-        <li><a class="text-muted" href="#">Last time</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Resource</a></li>
-        <li><a class="text-muted" href="#">Resource name</a></li>
-        <li><a class="text-muted" href="#">Another resource</a></li>
-        <li><a class="text-muted" href="#">Final resource</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Business</a></li>
-        <li><a class="text-muted" href="#">Education</a></li>
-        <li><a class="text-muted" href="#">Government</a></li>
-        <li><a class="text-muted" href="#">Gaming</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Team</a></li>
-        <li><a class="text-muted" href="#">Locations</a></li>
-        <li><a class="text-muted" href="#">Privacy</a></li>
-        <li><a class="text-muted" href="#">Terms</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+    <!-- FOOTER -->
+    <footer class="bg-dark bg-cover @@classList" style="background-image: url(./assets/img/patterns/pattern-2.svg)">
+      <div class="py-12 border-bottom border-gray-700">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+              <!-- Heading -->
+              <h5 class="mb-7 text-center text-white">Want style Ideas and Treats?</h5>
+
+              <!-- Form -->
+              <form class="mb-11">
+                <div class="form-row align-items-start">
+                  <div class="col">
+                    <input type="email" class="form-control form-control-gray-700 form-control-lg" placeholder="Enter Email *">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-gray-500 btn-lg">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+
+              <!-- Heading -->
+              <h4 class="mb-6 text-white">Shopper.</h4>
+
+              <!-- Social -->
+              <ul class="list-unstyled list-inline mb-7 mb-md-0">
+                <li class="list-inline-item">
+                  <a href="#!" class="text-gray-350">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#!" class="text-gray-350">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#!" class="text-gray-350">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#!" class="text-gray-350">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#!" class="text-gray-350">
+                    <i class="fab fa-medium"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-sm">
+
+              <!-- Heading -->
+              <h6 class="heading-xxs mb-4 text-white">
+                Support
+              </h6>
+
+              <!-- Links -->
+              <ul class="list-unstyled mb-7 mb-sm-0">
+                <li>
+                  <a class="text-gray-300" href="./contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="./faq.html">FAQs</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" data-toggle="modal" href="#modalSizeChart">Size Guide</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="./shipping-and-returns.html">Shipping & Returns</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-sm">
+
+              <!-- Heading -->
+              <h6 class="heading-xxs mb-4 text-white">
+                Shop
+              </h6>
+
+              <!-- Links -->
+              <ul class="list-unstyled mb-7 mb-sm-0">
+                <li>
+                  <a class="text-gray-300" href="./shop.html">Men's Shopping</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="./shop.html">Women's Shopping</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="./shop.html">Kids' Shopping</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="./shop.html">Discounts</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-sm">
+
+              <!-- Heading -->
+              <h6 class="heading-xxs mb-4 text-white">
+                Company
+              </h6>
+
+              <!-- Links -->
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="text-gray-300" href="./about.html">Our Story</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="#!">Careers</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="#!">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="#!">Privacy & Cookie policy</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-sm">
+
+              <!-- Heading -->
+              <h6 class="heading-xxs mb-4 text-white">
+                Contact
+              </h6>
+
+              <!-- Links -->
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="text-gray-300" href="#!">1-202-555-0105</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="#!">1-202-555-0106</a>
+                </li>
+                <li>
+                  <a class="text-gray-300" href="#!">help@shopper.com</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-6">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+
+              <!-- Copyright -->
+              <p class="mb-3 mb-md-0 font-size-xxs text-muted">
+                © 2019 All rights reserved. Designed by Unvab.
+              </p>
+
+            </div>
+            <div class="col-auto">
+
+              <!-- Payment methods -->
+              <img class="footer-payment" src="./assets/img/payment/mastercard.svg" alt="...">
+              <img class="footer-payment" src="./assets/img/payment/visa.svg" alt="...">
+              <img class="footer-payment" src="./assets/img/payment/amex.svg" alt="...">
+              <img class="footer-payment" src="./assets/img/payment/paypal.svg" alt="...">
+              <img class="footer-payment" src="./assets/img/payment/maestro.svg" alt="...">
+              <img class="footer-payment" src="./assets/img/payment/klarna.svg" alt="...">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
     <script src="js/app.js"></script>
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
