@@ -41,6 +41,7 @@ h1 {
   border-radius: 10px;
   margin: auto;
   overflow: hidden;
+  border: none;
 }
 
 .card--avatar {
@@ -59,7 +60,7 @@ h1 {
 
 .card--link {
   text-decoration: none;
-  background: #db4938;
+  background: #dc3545;
   color: #fff;
   padding: 0.3rem 1rem;
   border-radius: 20px;
