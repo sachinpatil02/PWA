@@ -1,4 +1,4 @@
-const staticDevCoffee = "dev-coffee-site-v1";
+const staticDevCoffee = "dev-coffee-site-v2";
 const assets = [
   "/",
   "/index.html",
@@ -15,6 +15,7 @@ const assets = [
   "/images/coffee9.jpg"
 ];
 
+//install service worker
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
     caches.open(staticDevCoffee).then(cache => {
@@ -23,6 +24,19 @@ self.addEventListener("install", installEvent => {
   );
 });
 
+//activate event
+self.addEventListener('fetch', evt => {
+  //console.log('fetch event', evt);
+  evt.waitUntil(
+   caches.keys().then(keys => {
+     //console.log(keys);
+        return Promise.all(keys.filter(key => key !== staticDevCoffee).map(key => caches.delete(key))
+	    )
+    })
+  );
+});
+
+//fetch event
 self.addEventListener("fetch", fetchEvent => {
   fetchEvent.respondWith(
     caches.match(fetchEvent.request).then(res => {
